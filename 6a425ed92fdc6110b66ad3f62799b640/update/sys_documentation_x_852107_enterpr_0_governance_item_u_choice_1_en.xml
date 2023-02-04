@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_choice_1" label="Override To (I want to update the current ASA outcome to as follows)" language="en" table="x_852107_enterpr_0_governance_item">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_choice_1</element>
+            <help/>
+            <hint/>
+            <label>Override To (I want to update the current ASA outcome to as follows)</label>
+            <language>en</language>
+            <name>x_852107_enterpr_0_governance_item</name>
+            <plural>Override To (I want to update the current ASA outcome to as follows)</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-13 11:21:12</sys_created_on>
+            <sys_id>294ffb222f5ca510b66ad3f62799b6a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Override To (I want to update the current ASA outcome to as follows)</sys_name>
+            <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+            <sys_update_name>sys_documentation_x_852107_enterpr_0_governance_item_u_choice_1_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-13 11:21:12</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

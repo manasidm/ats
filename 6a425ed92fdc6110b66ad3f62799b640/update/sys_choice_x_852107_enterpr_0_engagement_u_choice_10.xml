@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_choice_10" table="x_852107_enterpr_0_engagement" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_choice_10</element>
+            <name>x_852107_enterpr_0_engagement</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-12 11:18:58</sys_created_on>
+            <sys_id>d32532162f986510b66ad3f62799b67a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_choice_10</sys_name>
+            <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+            <sys_update_name>sys_choice_x_852107_enterpr_0_engagement_u_choice_10</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-12 11:18:58</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_10</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-Strategic Solution</label>
+            <language>en</language>
+            <name>x_852107_enterpr_0_engagement</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-12 11:18:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9f2532162f986510b66ad3f62799b679</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-12 11:18:58</sys_updated_on>
+            <value>non-strategic solution</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_10</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-Technical Requirement</label>
+            <language>en</language>
+            <name>x_852107_enterpr_0_engagement</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-12 11:18:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df2532162f986510b66ad3f62799b67a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-12 11:18:58</sys_updated_on>
+            <value>non-technical requirement</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_10</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Engagement Outstanding</label>
+            <language>en</language>
+            <name>x_852107_enterpr_0_engagement</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-12 11:18:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5f2532162f986510b66ad3f62799b67b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-12 11:18:59</sys_updated_on>
+            <value>engagement outstanding</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_10</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No Action</label>
+            <language>en</language>
+            <name>x_852107_enterpr_0_engagement</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-12 11:18:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db2532162f986510b66ad3f62799b67c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-12 11:18:59</sys_updated_on>
+            <value>no action</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_choice_10</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Key Action</label>
+            <language>en</language>
+            <name>x_852107_enterpr_0_engagement</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-12 11:18:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5b2532162f986510b66ad3f62799b67d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-12 11:18:59</sys_updated_on>
+            <value>pending key action</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_string_4" label="Project Name" language="en" table="x_852107_enterpr_0_st_governance_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_string_4</element>
+            <help/>
+            <hint/>
+            <label>Project Name</label>
+            <language>en</language>
+            <name>x_852107_enterpr_0_st_governance_request</name>
+            <plural>Project Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-12 09:14:23</sys_created_on>
+            <sys_id>16a89e1a2f186510b66ad3f62799b6f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Project Name</sys_name>
+            <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+            <sys_update_name>sys_documentation_x_852107_enterpr_0_st_governance_request_u_string_4_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-12 09:14:23</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

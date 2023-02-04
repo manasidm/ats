@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>
+
+h1.thick {
+  font-weight: bold;
+  font-size: 80px;
+}
+h4
+{
+    padding-right: 350px;
+}
+//.container{
+ // border: 2px solid #e6e6e6;
+//}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>scope_app_row_1_column_2</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>scope app row 1 column 2</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-12 12:51:12</sys_created_on>
+        <sys_id>1a4a035a2fd86510b66ad3f62799b6d2</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>scope app row 1 column 2</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sp_widget_1a4a035a2fd86510b66ad3f62799b6d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-18 07:22:14</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<h4>
+  Home/ Architecture Governance Portal
+  </h4>
+  <br>
+
+   
+
+  <h1 class="text-left">Architecture Governance Portal</h1>
+<p>Your gateway to a simplified, improved and automated architecture governance process</p>
+  </div>
+
+]]></template>
+    </sp_widget>
+</record_update>

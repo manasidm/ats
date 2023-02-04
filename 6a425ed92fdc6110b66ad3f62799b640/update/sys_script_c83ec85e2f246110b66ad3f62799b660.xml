@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_852107_enterpr_0_governance_item</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_852107_enterpr_0_governance_item">u_choice_34VALCHANGES^ORu_choice_36VALCHANGES^ORu_choice_35VALCHANGES^ORu_choice_33VALCHANGES^ORu_choice_32VALCHANGES^ORu_choice_29VALCHANGES^ORu_choice_31VALCHANGES^ORu_choice_30VALCHANGES^EQ<item display_value="-- None --" endquery="false" field="u_choice_34" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_36" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_35" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_33" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_32" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_29" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_31" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item display_value="-- None --" endquery="false" field="u_choice_30" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>asa status</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    if (current.u_choice_34 != '' && current.u_choice_36 != '' && current.u_choice_35 != '' && current.u_choice_33 != '' && current.u_choice_32 != '' && current.u_choice_29 != '' && current.u_choice_31 != '' && current.u_choice_30 != '') {
+        if (current.u_choice_34 == 'yes') {
+            current.u_choice_13 = "non architecturally significant";
+            current.u_choice_4 = "asa closed (not architecturally significant)";
+			gs.addInfoMessage('This is an non architecturally significant record');
+        } else if (current.u_choice_34 == 'no') {
+            if ((current.u_choice_36 == 'no' && current.u_choice_35 == 'no' && current.u_choice_33 == 'no' && current.u_choice_32 == 'no' && current.u_choice_29 == 'no' && current.u_choice_31 == 'no' && current.u_choice_30 == 'no')) {
+                current.u_choice_13 = "not architecturally significant";
+                current.u_choice_4 = "asa closed (not architecturally significant)";
+				gs.addInfoMessage('This is an non architecturally significant record');
+            } else if ((current.u_choice_36 == 'yes' || current.u_choice_35 == 'yes' || current.u_choice_33 == 'yes' || current.u_choice_32 == 'yes' || current.u_choice_29 == 'yes' || current.u_choice_31 == 'yes' || current.u_choice_30 == 'yes')) {
+                current.u_choice_13 = "architecturally significant";
+                current.u_choice_4 = "asa completed ( architecturally significant)";
+				gs.addInfoMessage('This is an architecturally significant record');
+            }
+
+        }
+    }
+	    current.u_reference_14 = gs.getUserID();
+	var time = new GlideDateTime();
+	var date = time.getDisplayValue();
+	current.u_glide_date_time_5=date;
+	current.u_glide_date_15=date;
+   
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-24 09:40:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c83ec85e2f246110b66ad3f62799b660</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>asa status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_c83ec85e2f246110b66ad3f62799b660</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-02 12:50:58</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=c83ec85e2f246110b66ad3f62799b660"/>
+</record_update>

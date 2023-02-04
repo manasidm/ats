@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_852107_enterpr_0.complete</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>complete</name>
+        <script><![CDATA[var complete = Class.create();
+complete.prototype = {
+    club: function(number) {
+
+        var gre = new GlideRecord("x_852107_enterpr_0_engagement");
+        gre.addQuery('u_reference_1', number);
+        gre.query();
+        while (gre.next()) {
+            var kp = gre.getRowCount();
+            var kq = 0;
+              var  kr = 0;
+            var ab = new GlideRecord("x_852107_enterpr_0_engagement");
+            ab.addQuery('u_reference_1', number);
+            ab.addQuery('u_choice_9=approved');
+            ab.query();
+            while (ab.next()) {
+				kq++;
+            }
+            var bc = new GlideRecord("x_852107_enterpr_0_engagement");
+            bc.addQuery('u_reference_1', number);
+            bc.addQuery('u_choice_9=not approved');
+            bc.query();
+            while (bc.next()) {
+
+                kr++;
+
+            }
+
+
+            if (kp == kq || kp == kr) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+    },
+    button: function(visible) {
+
+        var gr = new GlideRecord("x_852107_enterpr_0_engagement");
+        gr.addQuery('u_reference_1', visible);
+        gr.query();
+        //gr.next();
+        while (gr.next()) {
+            var k = gr.getRowCount();
+            var kl = 0;
+             var   kv = 0;
+            var a = new GlideRecord("x_852107_enterpr_0_engagement");
+            a.addQuery('u_reference_1', visible);
+            a.addQuery('u_choice_9=approved');
+            a.query();
+            while (a.next()) {
+
+                kl++;
+
+            }
+            var b = new GlideRecord("x_852107_enterpr_0_engagement");
+            b.addQuery('u_reference_1', visible);
+            b.addQuery('u_choice_9=not approved');
+            b.query();
+            while (b.next()) {
+                kv++;
+
+            }
+
+
+            if (k != kl && k != kv) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+    },
+
+    type: 'complete'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-30 11:43:50</sys_created_on>
+        <sys_id>1dc523042f742110b66ad3f62799b677</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>complete</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_include_1dc523042f742110b66ad3f62799b677</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-31 09:24:28</sys_updated_on>
+    </sys_script_include>
+</record_update>

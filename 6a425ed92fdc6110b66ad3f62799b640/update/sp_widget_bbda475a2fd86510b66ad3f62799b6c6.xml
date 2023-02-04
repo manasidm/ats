@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.btn{
+  margin-left : 90px;
+  
+    background-color: #ffffff;
+  border: 2px solid #e6e6e6;
+  font-size: 15px;
+}
+.container
+{ border: 2px solid #e6e6e6;
+  padding-top: 30px;
+padding-right: 30px;
+padding-bottom: 30px;
+padding-left: 30px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>scope_app_row_2</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>scope app row 2</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-12 12:53:46</sys_created_on>
+        <sys_id>bbda475a2fd86510b66ad3f62799b6c6</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>scope app row 2</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sp_widget_bbda475a2fd86510b66ad3f62799b6c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-02 05:43:31</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <div class = "container">
+    
+  
+  <div class = "ghk">
+   
+  <button class="btn btn-light">
+        <img src="start ASA.jpg" width="30" /> <a href="https://dev51043.service-now.com/ats?id=sc_cat_item&sys_id=d90832d62f986510b66ad3f62799b618&sysparm_category=d258b953c611227a0146101fb1be7c31">Start ASA
+    </a>   </button>
+    <button class="btn btn-light">
+        <img src="My Governance Iteem.jpg" width="30" /><a href="ats?id=ats_governance&table=x_852107_enterpr_0_governance_item">My Governance Item
+    </a>
+    </button>
+    <button class="btn btn-light">
+        <img src="My Reviews.jpg" width="30" /><a href="ats?id=review_approved&table=x_852107_enterpr_0_engagement&part=my_reviewer"> My Reviews</a>
+    </button>
+
+    <button class="btn btn-light">
+      <img src="My Reviews.jpg" width="30" /> <a href="ats?id=review_approved&table=x_852107_enterpr_0_engagement&part=my_approver">My Approvals</a>
+    </button>
+  
+  
+  </div>
+</div>
+  </div>]]></template>
+    </sp_widget>
+</record_update>
