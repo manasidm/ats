@@ -38,7 +38,7 @@
         <name>x_852107_enterpr_0_governance_request_1</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>true</read_only>
+        <read_only>false</read_only>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -52,14 +52,13 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-01-17 04:57:14</sys_created_on>
-        <sys_id>84cd4b3f2f102110b66ad3f62799b6a9</sys_id>
         <sys_name>Governance Request ID</sys_name>
         <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
         <sys_policy/>
         <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
         <sys_update_name>sys_dictionary_x_852107_enterpr_0_governance_request_1_number</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-01-17 05:05:05</sys_updated_on>
+        <sys_updated_on>2023-02-05 15:08:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

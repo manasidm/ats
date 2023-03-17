@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_852107_enterpr_0.ten</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ten</name>
+        <script><![CDATA[var ten = Class.create();
+ten.prototype = {
+    initial: function(red, num) {
+		var y = new GlideRecord('x_852107_enterpr_0_governance_item');
+y.addQuery('sys_id', num);
+y.query();
+if (y.next()) {
+    if (red == "architecturally significant to non-architecturally significant") {
+        y.u_choice_13 = 'non architecturally significant';
+        y.u_choice_4 = 'asa closed (not architecturally significant)';
+        y.u_reference_14 = gs.getUserDisplayName();
+    } else if (red == "non-architecturally significant to architecturally significant") {
+       y.u_choice_13 = 'architecturally significant';
+       y.u_choice_4 = 'asa completed ( architecturally significant)';
+
+    }
+}
+		
+    },
+
+    type: 'ten'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 15:44:31</sys_created_on>
+        <sys_id>a4b0e8ea977ce110a6e5bf36f053af70</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ten</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_include_a4b0e8ea977ce110a6e5bf36f053af70</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-07 04:27:11</sys_updated_on>
+    </sys_script_include>
+</record_update>

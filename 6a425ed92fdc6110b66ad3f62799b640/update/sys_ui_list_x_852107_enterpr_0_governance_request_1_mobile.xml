@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_852107_enterpr_0_governance_request_1" version="2" view="Mobile">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_852107_enterpr_0_governance_request_1" element="NULL" name="x_852107_enterpr_0_governance_request_1" parent="NULL" relationship="NULL" sys_domain="global" view="f09f0660f90211108c8bd16244dfe71f">e68a3bad97382110a6e5bf36f053afcd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-04 04:57:59</sys_created_on>
+            <sys_id>ee8a3bad97382110a6e5bf36f053afcd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-04 04:57:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_choice_1</element>
+            <list_id display_value="x_852107_enterpr_0_governance_request_1" element="NULL" name="x_852107_enterpr_0_governance_request_1" parent="NULL" relationship="NULL" sys_domain="global" view="f09f0660f90211108c8bd16244dfe71f">e68a3bad97382110a6e5bf36f053afcd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-04 04:57:59</sys_created_on>
+            <sys_id>628a3bad97382110a6e5bf36f053afce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-04 04:57:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_reference_2</element>
+            <list_id display_value="x_852107_enterpr_0_governance_request_1" element="NULL" name="x_852107_enterpr_0_governance_request_1" parent="NULL" relationship="NULL" sys_domain="global" view="f09f0660f90211108c8bd16244dfe71f">e68a3bad97382110a6e5bf36f053afcd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-04 04:57:59</sys_created_on>
+            <sys_id>e28a3bad97382110a6e5bf36f053afce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-04 04:57:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_reference_4</element>
+            <list_id display_value="x_852107_enterpr_0_governance_request_1" element="NULL" name="x_852107_enterpr_0_governance_request_1" parent="NULL" relationship="NULL" sys_domain="global" view="f09f0660f90211108c8bd16244dfe71f">e68a3bad97382110a6e5bf36f053afcd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-04 04:57:59</sys_created_on>
+            <sys_id>668a3bad97382110a6e5bf36f053afce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-04 04:57:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_reference_5</element>
+            <list_id display_value="x_852107_enterpr_0_governance_request_1" element="NULL" name="x_852107_enterpr_0_governance_request_1" parent="NULL" relationship="NULL" sys_domain="global" view="f09f0660f90211108c8bd16244dfe71f">e68a3bad97382110a6e5bf36f053afcd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-04 04:57:59</sys_created_on>
+            <sys_id>e68a3bad97382110a6e5bf36f053afce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-04 04:57:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_string_1</element>
+            <list_id display_value="x_852107_enterpr_0_governance_request_1" element="NULL" name="x_852107_enterpr_0_governance_request_1" parent="NULL" relationship="NULL" sys_domain="global" view="f09f0660f90211108c8bd16244dfe71f">e68a3bad97382110a6e5bf36f053afcd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-04 04:57:59</sys_created_on>
+            <sys_id>6a8a3bad97382110a6e5bf36f053afce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-04 04:57:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_string_3</element>
+            <list_id display_value="x_852107_enterpr_0_governance_request_1" element="NULL" name="x_852107_enterpr_0_governance_request_1" parent="NULL" relationship="NULL" sys_domain="global" view="f09f0660f90211108c8bd16244dfe71f">e68a3bad97382110a6e5bf36f053afcd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-04 04:57:59</sys_created_on>
+            <sys_id>ea8a3bad97382110a6e5bf36f053afce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-04 04:57:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_852107_enterpr_0_governance_request_1</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-04 04:57:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e68a3bad97382110a6e5bf36f053afcd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_852107_enterpr_0_governance_request_1</sys_name>
+            <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+            <sys_update_name>sys_ui_list_x_852107_enterpr_0_governance_request_1_Mobile</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-04 04:57:59</sys_updated_on>
+            <sys_user/>
+            <view display_value="Mobile" name="Mobile">f09f0660f90211108c8bd16244dfe71f</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

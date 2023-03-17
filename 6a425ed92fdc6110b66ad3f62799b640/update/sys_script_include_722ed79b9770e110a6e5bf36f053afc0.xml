@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_852107_enterpr_0.dog</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>dog</name>
+        <script><![CDATA[var dog = Class.create();
+dog.prototype = {
+    abc: function(status) {
+        var q = new GlideRecord("x_852107_enterpr_0_governance_item");
+        q.addQuery('u_choice_4', 'submission checklist submitted');
+        q.query();
+        while (q.next()) {
+            var a = new GlideRecord("x_852107_enterpr_0_engagement");
+            a.addQuery('u_reference_1', q.sys_id);
+            a.query();
+            while (a.next()) {
+                if (status == 'approved' && gs.getUser().hasRole('x_852107_enterpr_0.super_admin') || status == 'not approved' && gs.getUser().hasRole('x_852107_enterpr_0.super_admin') || status == 'refer to forum' && gs.getUser().hasRole('x_852107_enterpr_0.super_admin') ) {
+                    return true;
+                }
+            }
+
+
+        }
+    },
+
+    type: 'dog'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 13:39:53</sys_created_on>
+        <sys_id>722ed79b9770e110a6e5bf36f053afc0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>dog</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_include_722ed79b9770e110a6e5bf36f053afc0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-14 08:41:13</sys_updated_on>
+    </sys_script_include>
+</record_update>

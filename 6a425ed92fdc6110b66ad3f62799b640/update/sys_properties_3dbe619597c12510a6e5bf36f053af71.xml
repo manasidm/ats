@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_852107_enterpr_0.arb</name>
+        <read_roles/>
+        <suffix>arb</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-15 10:33:30</sys_created_on>
+        <sys_id>3dbe619597c12510a6e5bf36f053af71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_852107_enterpr_0.arb</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_properties_3dbe619597c12510a6e5bf36f053af71</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-15 10:33:30</sys_updated_on>
+        <type>string</type>
+        <value>Corporate Technology Approvers,Security Approvers,Infrastructure &amp; Cloud Approvers,Shared Technology Approvers,Data &amp; Analytics Approvers,Capital Markets Approvers,Post Trade Approvers</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=3dbe619597c12510a6e5bf36f053af71"/>
+</record_update>

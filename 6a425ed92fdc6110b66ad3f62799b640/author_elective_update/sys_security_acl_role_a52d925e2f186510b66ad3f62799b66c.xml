@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-12 09:33:59</sys_created_on>
+        <sys_id>a52d925e2f186510b66ad3f62799b66c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_852107_enterpr_0_engagement.x_852107_enterpr_0.engagement_user</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_security_acl display_value="x_852107_enterpr_0_engagement">5d2d925e2f186510b66ad3f62799b669</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_a52d925e2f186510b66ad3f62799b66c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-12 09:33:59</sys_updated_on>
+        <sys_user_role display_value="x_852107_enterpr_0.engagement_user" name="x_852107_enterpr_0.engagement_user">4d2d5a1e2f186510b66ad3f62799b6c2</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</application>
+        <file_path/>
+        <instance_id>3945a308dbc43410431011f84896193e</instance_id>
+        <instance_name>dev113397</instance_name>
+        <name>sys_security_acl_role_a52d925e2f186510b66ad3f62799b66c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-01-12 09:33:59</sys_created_on><sys_id>a52d925e2f186510b66ad3f62799b66c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_852107_enterpr_0_engagement.x_852107_enterpr_0.engagement_user</sys_name><sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package><sys_policy/><sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope><sys_security_acl display_value="x_852107_enterpr_0_engagement">5d2d925e2f186510b66ad3f62799b669</sys_security_acl><sys_update_name>sys_security_acl_role_a52d925e2f186510b66ad3f62799b66c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-01-12 09:33:59</sys_updated_on><sys_user_role display_value="x_852107_enterpr_0.engagement_user" name="x_852107_enterpr_0.engagement_user">4d2d5a1e2f186510b66ad3f62799b6c2</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-321273363</payload_hash>
+        <record_name>x_852107_enterpr_0_engagement.x_852107_enterpr_0.engagement_user</record_name>
+        <reverted_from/>
+        <source>6df4ff2997382110a6e5bf36f053afca</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-04 04:34:15</sys_created_on>
+        <sys_id>fa15bf6997382110a6e5bf36f053afed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1861ab415cd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-04 04:34:15</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>a12d925e9f186510ab63a9de1254ef6e</update_guid>
+        <update_guid_history>a12d925e9f186510ab63a9de1254ef6e:-321273363</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_852107_enterpr_0_engagement.x_852107_enterpr_0.engagement_user">945dcb969738e110a6e5bf36f053afd7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 09:35:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>421e99e08b9942eea52f5a2f97decbe4</sys_id>
+        <sys_metadata>a52d925e2f186510b66ad3f62799b66c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_852107_enterpr_0_engagement.x_852107_enterpr_0.engagement_user</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_parent display_value="x_852107_enterpr_0_engagement">5d2d925e2f186510b66ad3f62799b669</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_scope_delete display_value="">d3f1171382404d42b1b1e4f5196360e4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_a52d925e2f186510b66ad3f62799b66c</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_a52d925e2f186510b66ad3f62799b66c">fa15bf6997382110a6e5bf36f053afed</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 09:35:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

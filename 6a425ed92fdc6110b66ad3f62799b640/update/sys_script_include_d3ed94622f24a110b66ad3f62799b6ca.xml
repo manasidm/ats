@@ -24,10 +24,17 @@ status_change.prototype = {
             pqr.u_choice_9 = 'requesting approval';
             pqr.update();
         }
-
+        var po = new GlideRecord('x_852107_enterpr_0_solution_architecture_document');
+        po.addQuery('u_reference_2', current.sys_id);
+        po.addEncodedQuery('u_choice_3=draft for review^u_choice_3!=expired');
+        po.query();
+        while (po.next()) {
+            po.u_choice_3 = 'draft for approval';
+            po.update();
+        }
 
     },
-eng_status: function() {
+    eng_status: function() {
 
         var xyz = new GlideRecord('x_852107_enterpr_0_governance_item');
         xyz.addQuery('sys_id', current.sys_id);
@@ -40,6 +47,14 @@ eng_status: function() {
             while (we.next()) {
                 current.u_choice_4 = 'completed (digitally approved)';
                 current.update();
+                var poo = new GlideRecord('x_852107_enterpr_0_solution_architecture_document');
+                poo.addQuery('u_reference_2', current.sys_id);
+                poo.addEncodedQuery('u_choice_3=draft for approval^u_choice_3!=expired');
+                poo.query();
+                while (poo.next()) {
+                    poo.u_choice_3 = 'approved';
+                    poo.update();
+                }
             }
             var wee = new GlideRecord("x_852107_enterpr_0_engagement");
             wee.addQuery('u_reference_1', current.sys_id);
@@ -48,6 +63,14 @@ eng_status: function() {
             while (we.next()) {
                 current.u_choice_4 = 'completed (digitally not approved)';
                 current.update();
+                var poq = new GlideRecord('x_852107_enterpr_0_solution_architecture_document');
+                poq.addQuery('u_reference_2', current.sys_id);
+				poo.addEncodedQuery('u_choice_3=draft for approval^u_choice_3!=expired');
+                poq.query();
+                while (poq.next()) {
+                    poq.u_choice_3 = 'non approved';
+                    poq.update();
+                }
             }
         }
     },
@@ -59,13 +82,13 @@ eng_status: function() {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-01-25 05:14:09</sys_created_on>
         <sys_id>d3ed94622f24a110b66ad3f62799b6ca</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>status_change</sys_name>
         <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
         <sys_policy/>
         <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
         <sys_update_name>sys_script_include_d3ed94622f24a110b66ad3f62799b6ca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-02-03 06:32:38</sys_updated_on>
+        <sys_updated_on>2023-02-14 06:27:02</sys_updated_on>
     </sys_script_include>
 </record_update>

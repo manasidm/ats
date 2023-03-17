@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_852107_enterpr_0.update_gov</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>update_gov</name>
+        <script><![CDATA[var update_gov = Class.create();
+update_gov.prototype = {
+    abc: function(number) {
+		var w = new GlideRecord('x_852107_enterpr_0_governance_item');
+		w.addQuery('sys_id', number);
+		w.query();
+		while(w.next()){
+			if(w.u_reference_2 == gs.getUserID()){
+				return true;
+			}
+			else if(gs.getUser().hasRole('x_852107_enterpr_0.ats_approver')|| gs.getUser().hasRole('x_852107_enterpr_0.super_admin')){
+				return false;
+			}
+		}
+    },
+
+    type: 'update_gov'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-15 05:20:03</sys_created_on>
+        <sys_id>56852495978de110a6e5bf36f053af1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>update_gov</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_include_56852495978de110a6e5bf36f053af1b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-15 05:20:03</sys_updated_on>
+    </sys_script_include>
+</record_update>

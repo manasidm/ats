@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>package_private</access>
-        <active>true</active>
+        <active>false</active>
         <api_name>x_852107_enterpr_0.engagement</api_name>
         <caller_access/>
         <client_callable>false</client_callable>
@@ -9,14 +9,15 @@
         <name>engagement</name>
         <script><![CDATA[var engagement = Class.create();
 engagement.prototype = {
-    eng: function() {
-        //         var game = new GlideRecord('x_936716_enterpris_engagement');
-        //         game.addQuery('sys_id',current.sys_id);
-        //         game.query();
+    eng: function(number) {
+        var game = new GlideRecord('x_852107_enterpr_0_engagement');
+        game.addQuery('sys_id', number);
+        game.query();
         if (current.u_choice_9 == 'approved' || current.u_choice_9 == 'not approved') {
 
             var e = new GlideRecord('x_852107_enterpr_0_governance_item');
             e.addQuery('sys_id', current.u_reference_1);
+			e.addQuery('u_choice_4', 'sad uploaded (approval in progress)');
             e.query();
             if (e.next()) {
                 // water.status = 'engagement completed';
@@ -24,23 +25,23 @@ engagement.prototype = {
                 e.update();
             }
         }
-	},
+    },
 
-        type: 'engagement'
-    
-	
+    type: 'engagement'
+
+
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-01-25 10:48:21</sys_created_on>
         <sys_id>6d98e52a2f28a110b66ad3f62799b666</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>engagement</sys_name>
         <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
         <sys_update_name>sys_script_include_6d98e52a2f28a110b66ad3f62799b666</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-02-03 06:34:28</sys_updated_on>
+        <sys_updated_on>2023-02-10 10:36:49</sys_updated_on>
     </sys_script_include>
 </record_update>

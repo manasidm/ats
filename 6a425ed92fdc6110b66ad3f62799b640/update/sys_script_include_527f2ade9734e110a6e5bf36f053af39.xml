@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_852107_enterpr_0.getGroupMembers1</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>getGroupMembers1</name>
+        <script><![CDATA[var getGroupMembers1 = Class.create();
+getGroupMembers1.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+  getGroupMember: function() {
+                var groupName = this.getParameter('sysparm_groupName');
+                var members = [];
+                var gr = new GlideRecord('sys_user_grmember');
+                gr.addQuery('group', groupName);
+                gr.query();
+                while (gr.next()) {
+                    members.push(gr.user.sys_id);
+                }
+                return members.toString();
+            },
+    type: 'getGroupMembers1'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 07:26:45</sys_created_on>
+        <sys_id>527f2ade9734e110a6e5bf36f053af39</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>getGroupMembers1</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_include_527f2ade9734e110a6e5bf36f053af39</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 08:32:46</sys_updated_on>
+    </sys_script_include>
+</record_update>

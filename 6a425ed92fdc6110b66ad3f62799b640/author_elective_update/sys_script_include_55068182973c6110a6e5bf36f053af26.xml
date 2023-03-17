@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_852107_enterpr_0.Attach</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Attach</name>
+        <script><![CDATA[var Attach = Class.create();
+Attach.prototype = {
+ xyz: function(attach_sad, u_number) {
+        var x = new GlideRecord("sys_attachment");
+        x.addQuery("sys_id", attach_sad);
+       x.query();
+        if (x.next()) {
+            x.table_name = 'x_852107_enterpr_0_solution_architecture_document';
+            x.table_sys_id = u_number;
+            x.update();
+        }
+    },
+    type: 'Attach'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-05 05:06:35</sys_created_on>
+        <sys_id>55068182973c6110a6e5bf36f053af26</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Attach</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_include_55068182973c6110a6e5bf36f053af26</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-05 05:16:23</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</application>
+        <file_path/>
+        <instance_id>3945a308dbc43410431011f84896193e</instance_id>
+        <instance_name>dev113397</instance_name>
+        <name>sys_script_include_55068182973c6110a6e5bf36f053af26</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_852107_enterpr_0.Attach&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;Attach&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var Attach = Class.create();
+Attach.prototype = {
+ xyz: function(attach_sad, u_number) {
+        var x = new GlideRecord("sys_attachment");
+        x.addQuery("sys_id", attach_sad);
+       x.query();
+        if (x.next()) {
+            x.table_name = 'x_852107_enterpr_0_solution_architecture_document';
+            x.table_sys_id = u_number;
+            x.update();
+        }
+    },
+    type: 'Attach'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-02-05 05:06:35&lt;/sys_created_on&gt;&lt;sys_id&gt;55068182973c6110a6e5bf36f053af26&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Attach&lt;/sys_name&gt;&lt;sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0"&gt;6a425ed92fdc6110b66ad3f62799b640&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Enterprise Governance Architecture"&gt;6a425ed92fdc6110b66ad3f62799b640&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_55068182973c6110a6e5bf36f053af26&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-02-05 05:16:23&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>719688498</payload_hash>
+        <record_name>Attach</record_name>
+        <reverted_from/>
+        <source>4565bbe597382110a6e5bf36f053af00</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-05 05:16:23</sys_created_on>
+        <sys_id>f5584906973c6110a6e5bf36f053af6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186200104d80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-05 05:16:23</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>fd584906303c61109bcda3cba56c1069</update_guid>
+        <update_guid_history>fd584906303c61109bcda3cba56c1069:719688498,8ee64d82ff3c61108f2165f58f69bb15:-558996577,de1641829d3c611011eaf81fd1ea8297:925461456</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-05 05:47:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>18f102d3313347409770d3542b38c640</sys_id>
+        <sys_metadata>55068182973c6110a6e5bf36f053af26</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attach</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_scope_delete display_value="">d3f1171382404d42b1b1e4f5196360e4</sys_scope_delete>
+        <sys_update_name>sys_script_include_55068182973c6110a6e5bf36f053af26</sys_update_name>
+        <sys_update_version display_value="sys_script_include_55068182973c6110a6e5bf36f053af26">f5584906973c6110a6e5bf36f053af6a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-05 05:47:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

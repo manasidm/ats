@@ -14,7 +14,7 @@
 function checkUser(){
 
 
-if (gs.getUserID() == current.u_reference_2){return true;}
+if (current.u_reference_2  == gs.getUserID()){return true;}
 
 
 
@@ -27,14 +27,14 @@ return false;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-01-12 09:32:42</sys_created_on>
         <sys_id>62dc5e1e2f186510b66ad3f62799b624</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>x_852107_enterpr_0_governance_item</sys_name>
         <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
         <sys_policy/>
         <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
         <sys_update_name>sys_security_acl_62dc5e1e2f186510b66ad3f62799b624</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-01-23 07:22:54</sys_updated_on>
+        <sys_updated_on>2023-02-06 04:09:17</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

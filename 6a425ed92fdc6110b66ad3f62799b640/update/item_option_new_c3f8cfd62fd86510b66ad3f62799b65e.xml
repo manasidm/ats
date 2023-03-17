@@ -19,7 +19,7 @@
         <dynamic_ref_qual/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>u_string_full_utf8_28</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -36,7 +36,7 @@
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>true</map_to_field>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>u_string_full_utf8_28</name>
@@ -75,14 +75,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-01-12 12:46:45</sys_created_on>
         <sys_id>c3f8cfd62fd86510b66ad3f62799b65e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Supporting Attendees Email Address</sys_name>
         <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
         <sys_policy/>
         <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
         <sys_update_name>item_option_new_c3f8cfd62fd86510b66ad3f62799b65e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-01-12 12:46:45</sys_updated_on>
+        <sys_updated_on>2023-02-07 07:39:29</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>

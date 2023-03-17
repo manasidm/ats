@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_852107_enterpr_0.water</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>water</name>
+        <script><![CDATA[var water = Class.create();
+water.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    abc: function() {
+        var abcg = this.getParameter('sysparm_number');
+        var xyz = new GlideRecord('x_852107_enterpr_0_solution_architecture_document');
+        xyz.addQuery('u_reference_2', abcg);
+        xyz.query();
+        if (xyz.next()) {
+            return "true";
+        }
+        return "false";
+    },
+    type: 'water'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-15 13:29:11</sys_created_on>
+        <sys_id>bb271e9d97452510a6e5bf36f053afeb</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>water</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_include_bb271e9d97452510a6e5bf36f053afeb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-16 10:59:46</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</application>
+        <file_path/>
+        <instance_id>3945a308dbc43410431011f84896193e</instance_id>
+        <instance_name>dev113397</instance_name>
+        <name>sys_script_include_bb271e9d97452510a6e5bf36f053afeb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_852107_enterpr_0.water&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;water&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var water = Class.create();
+water.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    abc: function() {
+        var abcg = this.getParameter('sysparm_number');
+        var xyz = new GlideRecord('x_852107_enterpr_0_solution_architecture_document');
+        xyz.addQuery('u_reference_2', abcg);
+        xyz.query();
+        if (xyz.next()) {
+            return "true";
+        }
+        return "false";
+    },
+    type: 'water'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-02-15 13:29:11&lt;/sys_created_on&gt;&lt;sys_id&gt;bb271e9d97452510a6e5bf36f053afeb&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;water&lt;/sys_name&gt;&lt;sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0"&gt;6a425ed92fdc6110b66ad3f62799b640&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Enterprise Governance Architecture"&gt;6a425ed92fdc6110b66ad3f62799b640&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_bb271e9d97452510a6e5bf36f053afeb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-02-16 10:59:46&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-338421162</payload_hash>
+        <record_name>water</record_name>
+        <reverted_from/>
+        <source>4565bbe597382110a6e5bf36f053af00</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-16 10:59:46</sys_created_on>
+        <sys_id>0360cfe997096510a6e5bf36f053afdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18659e15a730000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-16 10:59:46</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>4b60cfe952096510c2291474686e77da</update_guid>
+        <update_guid_history>4b60cfe952096510c2291474686e77da:-338421162,d8ff72e9b2096510c12d86a5eb7ec98f:-435836344,feaf76e9cd09651070d8a99d45297460:-1850442138,dc5ff2a908096510a64733c04fb6b995:304493016,bf2efa6959096510c8f0101bbd2b4f47:-619086687,751ef2a5dd09651009d44a0fc4f5c166:304493016,f0f6766138096510c87a675712ce4ca1:-1439020199,511c666d6e856510d17a7ec71045fd67:1393831543,693d365597092510b625967e4115fce5:-437466165,961dfe159909251093861500d4029a82:1393831543,1209da913e8525105dd3476af0607dc0:-714972104</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-16 11:22:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>8fc7d0fab0974702bc6deec9ad7a4544</sys_id>
+        <sys_metadata>bb271e9d97452510a6e5bf36f053afeb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>water</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_scope_delete display_value="">d3f1171382404d42b1b1e4f5196360e4</sys_scope_delete>
+        <sys_update_name>sys_script_include_bb271e9d97452510a6e5bf36f053afeb</sys_update_name>
+        <sys_update_version display_value="sys_script_include_bb271e9d97452510a6e5bf36f053afeb">0360cfe997096510a6e5bf36f053afdb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-16 11:22:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

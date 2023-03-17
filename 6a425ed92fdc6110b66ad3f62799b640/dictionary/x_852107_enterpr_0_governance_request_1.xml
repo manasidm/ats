@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="63bccbfb2f102110b66ad3f62799b600" label="Governance Request 1" max_length="40" name="x_852107_enterpr_0_governance_request_1" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Governance Request ID" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Initiator" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Assignment Group" max_length="32" name="u_reference_4" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Assigned To" max_length="32" name="u_reference_5" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Request title" max_length="40" name="u_string_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Project Name" max_length="40" name="u_string_3" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_2"/>
+        </index>
+        <index name="index3">
+            <element name="u_reference_4"/>
+        </index>
+        <index name="index4">
+            <element name="u_reference_5"/>
+        </index>
+    </element>
+</database>

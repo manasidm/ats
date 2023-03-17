@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>abc</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+       var apps = new GlideAjax('getGroupMembers1'); // script include
+    apps.addParam('sysparm_name', 'getGroupMember');
+	apps.addParam('sysparm_groupName', g_form.getValue('u_reference_6'));
+    apps.getXML(assetList);
+
+    function assetList(response) {
+        var answer = response.responseXML.documentElement.getAttribute("answer");
+        //filterString = answer;
+		g_form.setValue('u_glide_list_7', answer);
+	}
+   
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 08:35:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f82f36d697f4e110a6e5bf36f053af1f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>abc</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_client_f82f36d697f4e110a6e5bf36f053af1f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-10 07:20:34</sys_updated_on>
+        <table>x_852107_enterpr_0_engagement</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</application>
+        <file_path/>
+        <instance_id>3945a308dbc43410431011f84896193e</instance_id>
+        <instance_name>dev113397</instance_name>
+        <name>sys_script_client_f82f36d697f4e110a6e5bf36f053af1f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;abc&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+       var apps = new GlideAjax('getGroupMembers1'); // script include
+    apps.addParam('sysparm_name', 'getGroupMember');
+	apps.addParam('sysparm_groupName', g_form.getValue('u_reference_6'));
+    apps.getXML(assetList);
+
+    function assetList(response) {
+        var answer = response.responseXML.documentElement.getAttribute("answer");
+        //filterString = answer;
+		g_form.setValue('u_glide_list_7', answer);
+	}
+   
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-02-06 08:35:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f82f36d697f4e110a6e5bf36f053af1f&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;abc&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0"&gt;6a425ed92fdc6110b66ad3f62799b640&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Enterprise Governance Architecture"&gt;6a425ed92fdc6110b66ad3f62799b640&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_f82f36d697f4e110a6e5bf36f053af1f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-02-10 07:20:34&lt;/sys_updated_on&gt;&lt;table&gt;x_852107_enterpr_0_engagement&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2052993254</payload_hash>
+        <record_name>abc</record_name>
+        <reverted_from/>
+        <source>4565bbe597382110a6e5bf36f053af00</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-10 07:20:34</sys_created_on>
+        <sys_id>c6b49be397702510a6e5bf36f053af84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1863a32856a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-10 07:20:34</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>02b49be33c7025103dd3ded1164f8a84</update_guid>
+        <update_guid_history>02b49be33c7025103dd3ded1164f8a84:-2052993254,d47f3ad694f4e110b1369e4edc66d5dd:566251021</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-11 05:44:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>6b176d551569405796239845c6a5b469</sys_id>
+        <sys_metadata>f82f36d697f4e110a6e5bf36f053af1f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>abc</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_parent display_value="Engagement">d41d1a1e2f186510b66ad3f62799b6e8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_scope_delete display_value="">d3f1171382404d42b1b1e4f5196360e4</sys_scope_delete>
+        <sys_update_name>sys_script_client_f82f36d697f4e110a6e5bf36f053af1f</sys_update_name>
+        <sys_update_version display_value="sys_script_client_f82f36d697f4e110a6e5bf36f053af1f">c6b49be397702510a6e5bf36f053af84</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-11 05:44:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

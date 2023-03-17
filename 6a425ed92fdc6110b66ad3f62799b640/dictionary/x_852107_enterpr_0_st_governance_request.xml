@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="read_only=true" db_object_id="2485de562f186510b66ad3f62799b631" label="Governance Request " max_length="40" name="x_852107_enterpr_0_st_governance_request" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Governance request ID" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Initiator" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Assignment Group" max_length="32" name="u_reference_3" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Assigned To" max_length="32" name="u_reference_5" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Project Name" max_length="40" name="u_string_4" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_2"/>
+        </index>
+        <index name="index3">
+            <element name="u_reference_3"/>
+        </index>
+        <index name="index4">
+            <element name="u_reference_5"/>
+        </index>
+    </element>
+</database>

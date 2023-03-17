@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_pipeline_environment">
+    <sn_pipeline_environment action="INSERT_OR_UPDATE">
+        <instance_credential display_value="x_852107_enterpr_0.abc">2bea0b6297e96110a6e5bf36f053af4d</instance_credential>
+        <instance_id>3945a308dbc43410431011f84896193e</instance_id>
+        <instance_type>dev</instance_type>
+        <instance_url>https://dev113397.service-now.com/</instance_url>
+        <is_controller>false</is_controller>
+        <name>red</name>
+        <sys_class_name>sn_pipeline_environment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-16 10:55:39</sys_created_on>
+        <sys_id>504b8f6297e96110a6e5bf36f053af35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>red</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sn_pipeline_environment_504b8f6297e96110a6e5bf36f053af35</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-16 10:55:39</sys_updated_on>
+    </sn_pipeline_environment>
+</record_update>

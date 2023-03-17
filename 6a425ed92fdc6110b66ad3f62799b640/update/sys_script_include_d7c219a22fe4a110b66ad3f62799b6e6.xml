@@ -9,17 +9,28 @@
         <name>invite</name>
         <script><![CDATA[var invite = Class.create();
 invite.prototype = {
-      invite1: function(number) {
-		var x = new GlideRecord("x_852107_enterpr_0_engagement");
-		x.addQuery('u_reference_1', number);
-		x.query();
-		if(x.next()){
-			if(x.u_choice_9 == 'reviewed' || x.u_choice_9 == 'review in progress'){
-							return true;
-			}
-			
+    invite1: function(number) {
+        var x = new GlideRecord("x_852107_enterpr_0_engagement");
+        x.addQuery('u_reference_1', number);
+        x.addQuery('type', 'CAF');
+        x.query();
+        if (x.next()) {
+            if (x.u_choice_9 == 'reviewed' || x.u_choice_9 == 'review in progress') {
+                return true;
+            }
+        }
+    },
 
-		}
+    invite2: function(number) {
+        var xx = new GlideRecord("x_852107_enterpr_0_engagement");
+        xx.addQuery('u_reference_1', number);
+        xx.addQuery('type', 'ARB');
+        xx.query();
+        if (xx.next()) {
+            if (xx.u_choice_9 == 'reviewed') {
+                return true;
+            }
+        }
     },
 
     type: 'invite'
@@ -28,13 +39,13 @@ invite.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-01-25 09:05:58</sys_created_on>
         <sys_id>d7c219a22fe4a110b66ad3f62799b6e6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>invite</sys_name>
         <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
         <sys_update_name>sys_script_include_d7c219a22fe4a110b66ad3f62799b6e6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-01-25 09:05:58</sys_updated_on>
+        <sys_updated_on>2023-02-15 11:27:15</sys_updated_on>
     </sys_script_include>
 </record_update>

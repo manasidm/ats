@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_852107_enterpr_0.water</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>water</name>
+        <script><![CDATA[var water = Class.create();
+water.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    abc: function() {
+        var abcg = this.getParameter('sysparm_number');
+        var xyz = new GlideRecord('x_852107_enterpr_0_solution_architecture_document');
+        xyz.addQuery('u_reference_2', abcg);
+        xyz.query();
+        if (xyz.next()) {
+            return "true";
+        }
+        return "false";
+    },
+    type: 'water'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-16 11:23:37</sys_created_on>
+        <sys_id>17a5c36197496510a6e5bf36f053afa1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>water</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_include_17a5c36197496510a6e5bf36f053afa1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-16 11:23:37</sys_updated_on>
+    </sys_script_include>
+</record_update>

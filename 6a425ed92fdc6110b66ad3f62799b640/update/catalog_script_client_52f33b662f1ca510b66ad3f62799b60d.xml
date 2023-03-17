@@ -18,23 +18,22 @@
         <name>email</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-   if (isLoading || newValue == '') {
-      return;
-   }
-var x = new GlideAjax('x_852107_enterpr_0.email');
-	x.addParam('sysparm_name', 'get_email');
-	x.addParam('sysparm_users', 'u_glide_list_25');
-	x.getXML(callback);
-
-	function callback(response) {
-		var answer = response.responseXML.documentElement.getAttribute('answer');
-		alert(answer);
-		g_form.setValue('u_string_full_utf8_28', answer);
+    if (isLoading || newValue == '') {
+        return;
+    }
+    var a= g_form.getValue('u_glide_list_25');
+	a = a.split(',');
+    for (i = 0; i<= a.length; i++) {
+		var w= a[i];
+       var we = g_form.getReference(w, callBack);
 	}
-   
+        function callBack(we) {
+            g_form.setValue('u_string_full_utf8_28', we.email);
+        }
 
-   //Type appropriate comment here, and begin script below
    
+    //Type appropriate comment here, and begin script below
+
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -42,7 +41,7 @@ var x = new GlideAjax('x_852107_enterpr_0.email');
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>52f33b662f1ca510b66ad3f62799b60d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>email</sys_name>
         <sys_overrides/>
         <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
@@ -50,7 +49,7 @@ var x = new GlideAjax('x_852107_enterpr_0.email');
         <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
         <sys_update_name>catalog_script_client_52f33b662f1ca510b66ad3f62799b60d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-01-13 10:43:46</sys_updated_on>
+        <sys_updated_on>2023-02-07 07:20:28</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

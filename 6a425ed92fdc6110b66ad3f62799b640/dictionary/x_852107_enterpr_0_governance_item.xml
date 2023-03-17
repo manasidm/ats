@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="769c5a1e2f186510b66ad3f62799b6ba" label="Governance Item" max_length="40" name="x_852107_enterpr_0_governance_item" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Governance Item ID" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="No Override" label="Override To (I want to update the current ASA outcome to as follows)" max_length="100" name="u_choice_1" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="No Override" sequence="0" value="no override"/>
+                <element inactive_on_update="false" label="Architecturally Significant To Non-Architecturally Significant" sequence="1" value="architecturally significant to non-architecturally significant"/>
+                <element inactive_on_update="false" label="Non-Architecturally Significant To Architecturally Significant" sequence="2" value="non-architecturally significant to architecturally significant"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Owning Division" mandatory="true" max_length="40" name="u_choice_10" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Post Trade" sequence="0" value="post trade"/>
+                <element inactive_on_update="false" label="Capital Markets" sequence="1" value="capital markets"/>
+                <element inactive_on_update="false" label="Data &amp; Analytics" sequence="2" value="data &amp; analytics"/>
+                <element inactive_on_update="false" label="Shared Technology" sequence="3" value="shared technology"/>
+                <element inactive_on_update="false" label="Infrastructure &amp; Cloud" sequence="4" value="infrastructure &amp; cloud"/>
+                <element inactive_on_update="false" label="Security" sequence="5" value="security"/>
+                <element inactive_on_update="false" label="Corporate Technology" sequence="6" value="corporate technology"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Environment" mandatory="true" max_length="40" name="u_choice_11" type="string">
+            <choice>
+                <element inactive_on_update="false" label="POC" sequence="0" value="poc"/>
+                <element inactive_on_update="false" label="Dev/Test" sequence="1" value="dev/test"/>
+                <element inactive_on_update="false" label="Production" sequence="2" value="production"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Solution Type" max_length="40" name="u_choice_12" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Cloud" sequence="0" value="cloud"/>
+                <element inactive_on_update="false" label="Hybrid" sequence="1" value="hybrid"/>
+                <element inactive_on_update="false" label="On Premise" sequence="2" value="on premise"/>
+                <element inactive_on_update="false" label="Outsourced" sequence="3" value="outsourced"/>
+                <element inactive_on_update="false" label="Saas" sequence="4" value="saas"/>
+                <element inactive_on_update="false" label="Unknown" sequence="5" value="unknown"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="ASA Result" max_length="40" name="u_choice_13" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Architecturally Significant" sequence="0" value="architecturally significant"/>
+                <element inactive_on_update="false" label="Non Architecturally Significant" sequence="1" value="non architecturally significant"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Role of Override Approver" max_length="40" name="u_choice_19" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Head of Architecture" sequence="1" value="head of architecture"/>
+                <element inactive_on_update="false" label="Head of Architecture Delegate" sequence="2" value="head of architecture delegate"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Continue With Full Governance Process" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="ARB" max_length="40" name="u_choice_22" type="string">
+            <choice>
+                <element inactive_on_update="false" label="CAF" sequence="0" value="caf"/>
+                <element inactive_on_update="false" label="Capital Market ARB" sequence="1" value="capital market arb"/>
+                <element inactive_on_update="false" label="Corporate Technology" sequence="2" value="corporate technology"/>
+                <element inactive_on_update="false" label="Data &amp; Analytics and Shared technology" sequence="3" value="data &amp; analytics and shared technology"/>
+                <element inactive_on_update="false" label="Group ARB" sequence="4" value="group arb"/>
+                <element inactive_on_update="false" label="Infrastructure &amp; Cloud and Security ARB" sequence="5" value="infrastructure &amp; cloud and security arb"/>
+                <element inactive_on_update="false" label="Post Trade ARB" sequence="6" value="post trade arb"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request Type" max_length="40" name="u_choice_23" type="string">
+            <choice>
+                <element inactive_on_update="false" label="For Approval Gaurdrail" sequence="0" value="for approval gaurdrail"/>
+                <element inactive_on_update="false" label="For Decision/Guidance" sequence="1" value="for decision/guidance"/>
+                <element inactive_on_update="false" label="For Discussion Guidance (AOB)" sequence="2" value="for discussion guidance (aob)"/>
+                <element inactive_on_update="false" label="Other" sequence="3" value="other"/>
+                <element inactive_on_update="false" label="Permission To Proceed-AOB" sequence="4" value="permission to proceed-aob"/>
+                <element inactive_on_update="false" label="Permission To Proceed to Development/Test" sequence="5" value="permission to proceed to development/test"/>
+                <element inactive_on_update="false" label="Permission To Proceed to Production" sequence="6" value="permission to proceed to production"/>
+                <element inactive_on_update="false" label="Permission To Proceed (POC)" sequence="7" value="permission to proceed (poc)"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="ASA Statement 6- Infrastructure Attributes" mandatory="true" max_length="40" name="u_choice_29" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="ASA Statement 8- Special Entities" mandatory="true" max_length="40" name="u_choice_30" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="ASA Statement 7- Brand Damage" mandatory="true" max_length="40" name="u_choice_31" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="ASA Statement 5- Security Architecture" mandatory="true" max_length="40" name="u_choice_32" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="ASA Statement 4- Guardrails" mandatory="true" max_length="40" name="u_choice_33" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="ASA Statement 1- Reference Design" mandatory="true" max_length="40" name="u_choice_34" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="ASA Statement 3- Data Classification" mandatory="true" max_length="40" name="u_choice_35" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="ASA Statement 2- New Component Integration and Dependencies" mandatory="true" max_length="40" name="u_choice_36" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status." max_length="100" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element inactive_on_update="false" label="Open" sequence="1" value="open"/>
+                <element inactive_on_update="false" label="Closed(Manually)" sequence="2" value="closed(manually)"/>
+                <element inactive_on_update="false" label="ASA Closed (Not Architecturally Significant)" sequence="3" value="asa closed (not architecturally significant)"/>
+                <element inactive_on_update="false" label="ASA Completed ( Architecturally Significant)" sequence="4" value="asa completed ( architecturally significant)"/>
+                <element inactive_on_update="false" label="Federated Checklist Completed (Follow Central Gov Process)" sequence="5" value="federated checklist completed (follow central gov process)"/>
+                <element inactive_on_update="false" label="Federated Checklist Completed (Follow Federated Process)" sequence="6" value="federated checklist completed (follow federated process)"/>
+                <element inactive_on_update="false" label="SAD Uploaded (Ready for approval)" sequence="7" value="sad uploaded (ready for approval)"/>
+                <element inactive_on_update="false" label="SAD Uploaded (Ready for review)" sequence="8" value="sad uploaded (ready for review)"/>
+                <element inactive_on_update="false" label="SAD Uploaded (Ready in progress)" sequence="9" value="sad uploaded (ready in progress)"/>
+                <element inactive_on_update="false" label="SAD Uploaded (Review completed)" sequence="10" value="sad uploaded (review completed)"/>
+                <element inactive_on_update="false" label="SAD Uploaded (Approval in progress)" sequence="11" value="sad uploaded (approval in progress)"/>
+                <element inactive_on_update="false" label="Engagement Completed" sequence="12" value="engagement completed"/>
+                <element inactive_on_update="false" label="Submission Checklist Submitted" sequence="13" value="submission checklist submitted"/>
+                <element inactive_on_update="false" label="Completed (Digitally Approved)" sequence="14" value="completed (digitally approved)"/>
+                <element inactive_on_update="false" label="Completed (Digitally Not Approved)" sequence="15" value="completed (digitally not approved)"/>
+                <element inactive_on_update="false" label="Completed (Approved in Forum)" sequence="16" value="completed (approved in forum)"/>
+                <element inactive_on_update="false" label="Completed (Not Approved in Forum)" sequence="17" value="completed (not approved in forum)"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="The solution introduces material / significant changes across domains" max_length="40" name="u_choice_45" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Is the solution a multi-year or a large investment" max_length="40" name="u_choice_46" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Is the solution high risk?" max_length="40" name="u_choice_47" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Does the solution require CAF engagement?" max_length="40" name="u_choice_48" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Does the solution introduce a new technology or pattern that is expected to be r" max_length="40" name="u_choice_49" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="u_glide_date_15" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Override Date" max_length="40" name="u_glide_date_52" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Status Date" max_length="40" name="u_glide_date_time_5" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Supporting attendees" max_length="1024" name="u_glide_list_25" reference="sys_user" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Governance Request Id" mandatory="true" max_length="32" name="u_reference_1" reference="x_852107_enterpr_0_governance_request_1" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="ASA Completed By" max_length="32" name="u_reference_14" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Initiator" mandatory="true" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Override Approver (This Override has been Approved and Completed by)" max_length="32" name="u_reference_20" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Presenter" max_length="32" name="u_reference_24" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Override By" max_length="32" name="u_reference_51" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Designated Owner" max_length="32" name="u_reference_9" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Override To (I want to update the current ASA outcome to as follows)" max_length="40" name="u_string_17" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Domain(D&amp;A and Shared Technology Only)" max_length="40" name="u_string_26" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Request Title" mandatory="true" max_length="40" name="u_string_3" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Continue With Full Governance Process" max_length="40" name="u_string_50" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Override Reason" max_length="40" name="u_string_54" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="LeanIX Reference" max_length="40" name="u_string_8" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Override Reason (Reason for overriding the result)" max_length="255" name="u_string_full_utf8_21" read_only="true" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" label="Presenter Email Address" max_length="255" name="u_string_full_utf8_27" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" label="Supporting Attendee Email Address" max_length="255" name="u_string_full_utf8_28" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description of Proposed Change" mandatory="true" max_length="255" name="u_string_full_utf8_6" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description of Why The Change is Required" mandatory="true" max_length="255" name="u_string_full_utf8_7" type="string_full_utf8"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_1"/>
+        </index>
+        <index name="index3">
+            <element name="u_reference_14"/>
+        </index>
+        <index name="index4">
+            <element name="u_reference_2"/>
+        </index>
+        <index name="index5">
+            <element name="u_reference_20"/>
+        </index>
+        <index name="index6">
+            <element name="u_reference_24"/>
+        </index>
+        <index name="index7">
+            <element name="u_reference_51"/>
+        </index>
+        <index name="index8">
+            <element name="u_reference_9"/>
+        </index>
+    </element>
+</database>

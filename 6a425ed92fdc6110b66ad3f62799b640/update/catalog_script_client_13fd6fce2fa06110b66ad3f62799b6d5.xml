@@ -18,10 +18,28 @@
         <name>autopopulate asa</name>
         <order/>
         <script><![CDATA[function onLoad() {
-   //Type appropriate comment here, and begin script below
-   var url=top.location.href;
-var value=new URLSearchParams(url).get("sysparm_grSysId");
-g_form.setValue("number",value);
+    //Type appropriate comment here, and begin script below
+    var url = top.location.href;
+    var value = new URLSearchParams(url).get("sysparm_grSysId");
+    g_form.setValue("number", value);
+
+    var x = new GlideAjax('global.override');
+    x.addParam('sysparm_name', 'override');
+    x.addParam('sysparm_number', g_form.getValue('number'));
+    x.getXML(callback);
+
+    function callback(response) {
+        var ans = response.responseXML.documentElement.getAttribute("answer");
+
+        if (ans == "architecturally significant") {
+            g_form.setValue('u_choice_1', "architecturally significant to non-architecturally significant");
+        } else {
+            g_form.setValue('u_choice_1', "non-architecturally significant to architecturally significant");
+
+        }
+    }
+
+
 
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
@@ -30,7 +48,7 @@ g_form.setValue("number",value);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>13fd6fce2fa06110b66ad3f62799b6d5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>autopopulate asa</sys_name>
         <sys_overrides/>
         <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
@@ -38,7 +56,7 @@ g_form.setValue("number",value);
         <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
         <sys_update_name>catalog_script_client_13fd6fce2fa06110b66ad3f62799b6d5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-01-24 07:08:33</sys_updated_on>
+        <sys_updated_on>2023-02-12 16:27:09</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>

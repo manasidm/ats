@@ -42,26 +42,27 @@
         if (current.u_choice_34 == 'yes') {
             current.u_choice_13 = "non architecturally significant";
             current.u_choice_4 = "asa closed (not architecturally significant)";
-			gs.addInfoMessage('This is an non architecturally significant record');
+            alert(" ASA Result is Non Architecturally Sifnificant");
         } else if (current.u_choice_34 == 'no') {
             if ((current.u_choice_36 == 'no' && current.u_choice_35 == 'no' && current.u_choice_33 == 'no' && current.u_choice_32 == 'no' && current.u_choice_29 == 'no' && current.u_choice_31 == 'no' && current.u_choice_30 == 'no')) {
                 current.u_choice_13 = "not architecturally significant";
                 current.u_choice_4 = "asa closed (not architecturally significant)";
-				gs.addInfoMessage('This is an non architecturally significant record');
+               
             } else if ((current.u_choice_36 == 'yes' || current.u_choice_35 == 'yes' || current.u_choice_33 == 'yes' || current.u_choice_32 == 'yes' || current.u_choice_29 == 'yes' || current.u_choice_31 == 'yes' || current.u_choice_30 == 'yes')) {
                 current.u_choice_13 = "architecturally significant";
                 current.u_choice_4 = "asa completed ( architecturally significant)";
-				gs.addInfoMessage('This is an architecturally significant record');
+				
+
             }
 
         }
     }
-	    current.u_reference_14 = gs.getUserID();
-	var time = new GlideDateTime();
-	var date = time.getDisplayValue();
-	current.u_glide_date_time_5=date;
-	current.u_glide_date_15=date;
-   
+    current.u_reference_14 = gs.getUserID();
+     var a = new GlideDateTime();
+     var date = a.getDisplayValue();
+    current.u_glide_date_time_5 = date;
+    current.u_glide_date_15 = date;
+
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -70,7 +71,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c83ec85e2f246110b66ad3f62799b660</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>asa status</sys_name>
         <sys_overrides/>
         <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
@@ -78,7 +79,7 @@
         <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
         <sys_update_name>sys_script_c83ec85e2f246110b66ad3f62799b660</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-02-02 12:50:58</sys_updated_on>
+        <sys_updated_on>2023-02-14 09:02:01</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

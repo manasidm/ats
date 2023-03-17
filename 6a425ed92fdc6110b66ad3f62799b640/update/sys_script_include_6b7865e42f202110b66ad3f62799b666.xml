@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>public</access>
+        <access>package_private</access>
         <active>true</active>
         <api_name>x_852107_enterpr_0.EngGroup</api_name>
         <caller_access/>
@@ -9,7 +9,7 @@
         <name>EngGroup</name>
         <script><![CDATA[var EngGroup = Class.create();
 EngGroup.prototype = {
-     abc: function(number0, test1, number1, no, yes) {
+    abc: function(number0, test1, number1, no, yes) {
         var red = new GlideRecord('sys_user_group');
         red.addQuery('parent', test1);
         red.addEncodedQuery('nameLIKEapprovers');
@@ -18,12 +18,14 @@ EngGroup.prototype = {
             var qwerty = new GlideRecord("x_852107_enterpr_0_engagement");
             qwerty.addQuery('number', number0);
             qwerty.u_reference_5 = red.sys_id;
-			qwerty.u_reference_1 = number1;
+            qwerty.u_reference_1 = number1;
             qwerty.u_reference_3 = no;
-			qwerty.u_string_11 = yes;
+//             qwerty.u_reference_4 = no;
+            qwerty.u_string_11 = yes;
+            qwerty.u_choice_9 = 'awaiting review';
             qwerty.update();
         }
-	var blue = new GlideRecord('sys_user_group');
+        var blue = new GlideRecord('sys_user_group');
         blue.addQuery('parent', test1);
         blue.addEncodedQuery('nameLIKEreviewers');
         blue.query();
@@ -31,6 +33,39 @@ EngGroup.prototype = {
             qwerty.u_reference_6 = blue.sys_id;
             qwerty.update();
         }
+
+        var blue1 = new GlideRecord('sys_user_group');
+		blue1.addQuery('name', test1);
+        blue1.addEncodedQuery('nameINRisk,Privacy,DGO,Legal1,Procurement1,Compliance');
+        blue1.query();
+        if (blue1.next()) {
+            qwerty.type = 'CAF';
+            qwerty.update();
+        }
+
+        var abc = new GlideRecord('sys_user_group');
+		abc.addQuery('name', test1);
+        abc.addEncodedQuery('nameINPost Trade,Capital Markets,Security,Corporate Technology,Infrastructure & Cloud,Data & Analytics,Shared Technology');
+        abc.query();
+        if (abc.next()) {
+            qwerty.type = 'ARB';
+            qwerty.update();
+        }
+
+        var a = new GlideRecord('x_852107_enterpr_0_solution_architecture_document');
+        a.addQuery('u_reference_2', number1);
+        a.addQuery('u_choice_3', 'expired');
+        a.query();
+        if (a.next()) {
+            qwerty.u_reference_4 = a.sys_id;
+            qwerty.update();
+        }else{
+			qwerty.u_reference_3 = no;
+			qwerty.update();
+		}
+		
+
+
     },
 
     type: 'EngGroup'
@@ -39,13 +74,13 @@ EngGroup.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-01-19 05:32:04</sys_created_on>
         <sys_id>6b7865e42f202110b66ad3f62799b666</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>EngGroup</sys_name>
         <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
         <sys_update_name>sys_script_include_6b7865e42f202110b66ad3f62799b666</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-02-03 06:32:22</sys_updated_on>
+        <sys_updated_on>2023-02-16 12:19:25</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Override To(I want to update the current ASA outcome to as follows)">368bc71a2fd86510b66ad3f62799b6f5</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 04:25:54</sys_created_on>
+        <sys_id>f8560a9a97bca110a6e5bf36f053af25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Architecturally Signigicant to Non Architecturally Signigicant</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>question_choice_f8560a9a97bca110a6e5bf36f053af25</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 04:25:54</sys_updated_on>
+        <text>Architecturally Signigicant to Non Architecturally Signigicant</text>
+        <value>2</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=f8560a9a97bca110a6e5bf36f053af25"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</application>
+        <file_path/>
+        <instance_id>3945a308dbc43410431011f84896193e</instance_id>
+        <instance_name>dev113397</instance_name>
+        <name>question_choice_f8560a9a97bca110a6e5bf36f053af25</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>100</order><published_ref/><question display_value="Override To(I want to update the current ASA outcome to as follows)">368bc71a2fd86510b66ad3f62799b6f5</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-06 04:25:54</sys_created_on><sys_id>f8560a9a97bca110a6e5bf36f053af25</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Architecturally Signigicant to Non Architecturally Signigicant</sys_name><sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package><sys_policy/><sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope><sys_update_name>question_choice_f8560a9a97bca110a6e5bf36f053af25</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-06 04:25:54</sys_updated_on><text>Architecturally Signigicant to Non Architecturally Signigicant</text><value>2</value></question_choice><fx_price action="delete_multiple" query="id=f8560a9a97bca110a6e5bf36f053af25"/></record_update>]]></payload>
+        <payload_hash>1025102032</payload_hash>
+        <record_name>Architecturally Signigicant to Non Architecturally Signigicant</record_name>
+        <reverted_from/>
+        <source>4565bbe597382110a6e5bf36f053af00</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-06 04:25:54</sys_created_on>
+        <sys_id>1c6642da97bca110a6e5bf36f053af27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18624f92bce0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-06 04:25:54</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>546642daddbca1105688b4d79631ce27</update_guid>
+        <update_guid_history>546642daddbca1105688b4d79631ce27:1025102032</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Architecturally Signigicant to Non Architecturally Signigicant">a0c5d3aa97302110a6e5bf36f053af88</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-07 04:51:11</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>10388ea8b44e4b90b7a107a3141f33e4</sys_id>
+        <sys_metadata>f8560a9a97bca110a6e5bf36f053af25</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Architecturally Signigicant to Non Architecturally Signigicant</sys_name>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_parent display_value="Override To(I want to update the current ASA outcome to as follows)">368bc71a2fd86510b66ad3f62799b6f5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_scope_delete display_value="">d3f1171382404d42b1b1e4f5196360e4</sys_scope_delete>
+        <sys_update_name>question_choice_f8560a9a97bca110a6e5bf36f053af25</sys_update_name>
+        <sys_update_version display_value="question_choice_f8560a9a97bca110a6e5bf36f053af25">1c6642da97bca110a6e5bf36f053af27</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-07 04:51:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

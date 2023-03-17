@@ -14,7 +14,7 @@
    //Type appropriate comment here, and begin script below
    var x = "&sysparm_grSysId=" + g_form.getUniqueValue();
     if (g_form.getActionName() == "engagement decision") {
-        location.href = ("sp?id=sc_cat_item&sys_id=c069f21a2f986510b66ad3f62799b616" + x);
+        location.href = ("ats?id=sc_cat_item&sys_id=c069f21a2f986510b66ad3f62799b616" + x);
 	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -23,7 +23,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>077117e82fa42110b66ad3f62799b681</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Enagagement decision</sys_name>
         <sys_overrides/>
         <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
@@ -31,7 +31,7 @@
         <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
         <sys_update_name>sys_script_client_077117e82fa42110b66ad3f62799b681</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-01-19 13:22:46</sys_updated_on>
+        <sys_updated_on>2023-02-05 06:40:39</sys_updated_on>
         <table>x_852107_enterpr_0_engagement</table>
         <type>onSubmit</type>
         <ui_type>10</ui_type>

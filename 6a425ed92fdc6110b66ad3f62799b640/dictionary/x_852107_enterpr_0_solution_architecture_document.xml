@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8ee57e162f986510b66ad3f62799b6cf" label="Solution Architecture Document" max_length="40" name="x_852107_enterpr_0_solution_architecture_document" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="SAD ID" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="SAD Status" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Draft For Review" sequence="0" value="draft for review"/>
+                <element inactive_on_update="false" label="Draft For Approval" sequence="1" value="draft for approval"/>
+                <element inactive_on_update="false" label="Draft For Forum" sequence="2" value="draft for forum"/>
+                <element inactive_on_update="false" label="Approved" sequence="3" value="approved"/>
+                <element inactive_on_update="false" label="Non Approved" sequence="4" value="non approved"/>
+                <element inactive_on_update="false" label="Expired" sequence="5" value="expired"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Status Date" max_length="40" name="u_glide_date_time_4" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Created" max_length="40" name="u_glide_date_time_5" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Division" max_length="1024" name="u_glide_list_2" reference="sys_user_group" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Uploaded By" max_length="32" name="u_reference_1" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Governance Item ID" max_length="32" name="u_reference_2" reference="x_852107_enterpr_0_governance_item" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Description of SAD" max_length="40" name="u_string_6" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_reference_1"/>
+        </index>
+        <index name="index3">
+            <element name="u_reference_2"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_reference_5</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>pop_up</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+	var a = g_form.getValue('u_reference_5');
+    var x = new GlideAjax('redq');
+    x.addParam('sysparm_name', 'abc');
+	x.addParam('sysparm_group', a);
+    x.getXML(abc);
+// 	var z = x.getXMLAnswer();
+	function abc(response) {
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		
+		g_form.addInfoMessage(answer);
+	}
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-16 05:36:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>20c331e997c16510a6e5bf36f053afdf</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>pop_up</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Governance Architecture" source="x_852107_enterpr_0">6a425ed92fdc6110b66ad3f62799b640</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Governance Architecture">6a425ed92fdc6110b66ad3f62799b640</sys_scope>
+        <sys_update_name>sys_script_client_20c331e997c16510a6e5bf36f053afdf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-16 07:34:38</sys_updated_on>
+        <table>x_852107_enterpr_0_engagement</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
